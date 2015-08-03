@@ -1,0 +1,107 @@
+#sidebar-wrapper
+  border-bottom none
+  border-radius 0
+  height 100% 
+  // height calc(100% - 88px)
+  z-index 1050
+  font-size 12px
+  padding-bottom 0
+  box-shadow none
+  .popupBody
+    margin-bottom 45px
+  .list-group:empty
+    display none
+  .form-control
+    font-size 12px
+  input.form-control
+    height 30px
+  .row
+    margin-right -5px
+    margin-left -5px
+  #directions-panel
+    // .panel:empty
+.barcontainer
+  position fixed
+  bottom 0
+  left 0
+ 
+.wrapper
+  border-top 1px solid #ddd
+  background-color #f5f5f5
+  position relative
+  margin 0 auto
+  overflow hidden
+  padding 5px
+  height 38px
+
+.list
+  position absolute
+  left 0px
+  top 0px
+  min-width 300px
+  margin-left 12px
+  margin-top 0px
+
+.list li
+  display table-cell
+  position relative
+  text-align center
+  cursor grab
+  cursor -webkit-grab
+  color #efefef
+  vertical-align middle
+
+.scroller
+  text-align center
+  cursor pointer
+  // display none
+  // padding 7px
+  width 0
+  padding-left 0
+  padding-right 0
+  padding-top 11px
+  white-space nowrap
+  vertical-align middle
+  background-color #fff
+  
+.scroller.visible
+  width 25px
+  padding 7px
+  padding-top 11px
+  // font-size 0
+
+.scroller-right
+  float right
+
+.scroller-left
+  float left
+
+.tab
+  cursor pointer !important
+  a, > a
+    cursor pointer !important
+
+.nav-tabs
+  > li.active
+    > a
+      background-color #aaa
+      border 1px solid #555
+      color #f5f5f5
+      //border-top-color transparent
+  > li.active:hover
+    > a 
+      background-color #555
+      color #f5f5f5
+  > li
+    > a
+      border 1px solid #ddd
+      background-color white
+      border-radius 0 0 4px 4px
+      width 100%
+      display block
+      border-radius 5px 5px 0 0
+
+
+@media (min-width 768px)
+  #map-toggle
+    display none
